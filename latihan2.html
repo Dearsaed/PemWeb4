@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script src="jquery-3.4.1.min.js"></script> <!-- Memanggil jquery -->
+    <script type="text/javascript">
+    $(document).ready(function(){ //memanggil function dari jquery
+      $(".awal1").dblclick(function() {
+        $(".awal1").css("background-color","blue")
+      } );
+      $(".awal2").dblclick(function() {
+        $(".awal2").css("background-color","blue")
+      } );
+      $(".awal3").dblclick(function() {
+        $(".awal3").css("background-color","blue")
+      } );
+      $(".awal4").dblclick(function() {
+        $(".awal4").css("background-color","blue")
+      } );
+    });
+    </script>
+    <style type="text/css">
+      button{
+        /* membuat kotak */
+        width : 50px;
+        height : 50px;
+        background : lightyellow;
+        border : 1px solid black;
+        padding : 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Klik 2x untuk merubah warna</h3>
+    <!-- Button untuk menjalankan function -->
+    <button class="awal1"></button>
+    <button class="awal2"></button>
+    <button class="awal3"></button>
+    <button class="awal4"></button>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script src="jquery-3.4.1.min.js"></script> <!-- Memanggil jquery -->
+    <script type="text/javascript">
+    $(document).ready(function(){ //memanggil function dari jquery
+      $("#daftar").addClass("merahkuning");}); //menambah id daftar menjadi class merahkuning
+    </script>
+    <style>
+      .merahkuning{
+        color : orange;
+        font-weight : bold;
+        background-color: green;
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- menulis kalimat -->
+      <p>paragraf pertama</p>
+    </div>
+    <div>
+      <ul id="daftar">
+        <!-- menulis list item -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+  </body>
+</html>

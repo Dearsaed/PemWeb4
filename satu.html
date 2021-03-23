@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="jquery-3.4.1.min.js"> //memanggil jquery
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){ //memanggil function dari jquery
+      $(".sembunyi").click(function() {$("#foto").hide("slow") });
+      $(".tampil").click(function() {$("#foto").show("slow") });
+    });
+    </script>
+  </head>
+  <body>
+    <!-- tombol menyembunyikan dan menampilkan gambar -->
+    <button class="sembunyi">sembunyikan</button>
+    <button class="tampil">tampilkan</button>
+    <!-- gambar -->
+    <p><img id="foto" src="main_pc.jpg"></p>
+  </body>
+</html>

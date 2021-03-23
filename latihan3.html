@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script src="jquery-3.4.1.min.js"></script> <!-- Memanggil jquery -->
+    <script type="text/javascript">
+    $(document).ready(function(){ //memanggil function dari jquery
+      $(".muncul").click(function() {$("#kotak").fadeIn("slow",function(){})});
+      $(".hilang").click(function() {$("#kotak").fadeOut("slow",function(){})});
+      $(".pudar").click(function() {$("#kotak").fadeTo("slow",0.3, function(){})});
+    });
+    </script>
+    <style type="text/css">
+      #kotak{
+        width : 500px;
+        height : 250px;
+        background : red;
+        border : 1px solid black;
+        padding : 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- membuat kotak -->
+    <p id="kotak"></p>
+    <!-- tombol pengubah kotak -->
+    <button class="muncul">Fade In</button>
+    <button class="hilang">Fade Out</button>
+    <button class="pudar">Fade to 0,3</button>
+  </body>
+</html>

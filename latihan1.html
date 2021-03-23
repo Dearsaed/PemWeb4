@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script src="jquery-3.4.1.min.js"> //memanggil jquery
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){ //memanggil function dari jquery
+      $(".sembunyi1").click(function() {$("#foto1").hide("slow") });
+      $(".tampil1").click(function() {$("#foto1").show("slow") });
+      $(".sembunyi2").click(function() {$("#foto2").hide("slow") });
+      $(".tampil2").click(function() {$("#foto2").show("slow") });
+    });
+    </script>
+    <style media="screen">
+      img{
+        width : auto;
+        height : 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- tombol menyembunyikan dan menampilkan gambar -->
+    <table>
+      <tr>
+        <td><button class="sembunyi1">sembunyikan gambar 1</button></td>
+        <td><button class="tampil1">tampilkan gambar 1</button></td>
+      </tr>
+      <tr>
+        <td><button class="sembunyi2">sembunyikan gambar 2</button></td>
+        <td><button class="tampil2">tampilkan gambar 2</button></td>
+      </tr>
+    </table>
+    <!-- gambar -->
+    <p><img id="foto1" src="main_pc.jpg"> <img id="foto2" src="sora.jpg"></p>
+    <p></p>
+  </body>
+</html>
